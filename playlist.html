@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="PlaylistStyle.css" />
+
+    <head>
+
+        <body>
+            <!--MAIN CONTAINER-->
+            <div class="container">
+                <!--LEFT SIDE-->
+                <div class="left-side">
+                    <h1>Playlist</h1>
+                    <p>Songs that remind me of you</p>
+                </div>
+                <!--RIGHT SIDE-->
+                <div class="right-side">
+                    <!--Hidden radios-->
+                    <input type="radio" name="slider" id="item-1" check />
+                    <input type="radio" name="slider" id="item-2" />
+                    <input type="radio" name="slider" id="item-3" />
+                    <input type="radio" name="slider" id="item-4" />
+                    <input type="radio" name="slider" id="item-5" />
+
+                    <!--CARDS-->
+                    <div class="cards">
+                        <!--Song 1: Here I Am-->
+                        <label class="card" for="item-1" id="song-1">
+                        <img src="Images/30a0da8ab8a938310598a8c17b97b685.jpg" alt="Here I Am" />
+                    </label>
+                        <!--Song 2: Beaches-->
+                        <label class="card" for="item-2" id="song-2">
+                        <img src="Images/6706fe03095e576c95e210fb3eacc33e.jpg" alt="Beaches" />
+                    </label>
+                        <!--Song 3: Daylight-->
+                        <label class="card" for="item-3" id="song-3">
+                        <img src="Images/883cf24290660f58dc56a960b0188140.jpg" alt="Daylight" />
+                    </label>
+                        <!--Song 4: All My Heart-->
+                        <label class="card" for="item-4" id="song-4">
+                        <img src="Images/fb3b201d96e5028e013444ebcd368b5b.jpg" alt="All My Heart" />
+                    </label>
+                        <!--Song 5: About You-->
+                        <label class="card" for="item-5" id="song-5">
+                        <img src="Images/7604b89567060fb78e3eb4d71e5448e7.jpg" alt="About You" />
+                    </label>
+                    </div>
+
+                    <!--PLAYER-->
+                    <div class="player">
+                        <!--SONG-INFO 1: Here I Am-->
+                        <div class="song-info active" id="song-info-1">
+                            <div class="title">Here I Am</div>
+                            <div class="song-details">
+                                <span class="artist">Air Supply</span>
+                                <span class="duration">3:50</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-indicator">
+                                <span class="elapsed"></span>
+                                <span class="remaining"></span>
+                            </div>
+                        </div>
+                        <!--SONG-INFO 2 Beaches-->
+                        <div class="song-info" id="song-info-2">
+                            <div class="title">Beaches</div>
+                            <div class="song-details">
+                                <span class="Artist">Beabadoobee</span>
+                                <span class="duration">3:50</span>
+                            </div>
+                            <div class="progress bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-indicator">
+                                <span class="elapsed"></span>
+                                <span class="remaining"></span>
+                            </div>
+                        </div>
+                        <!--SONG INFO 3: Daylight-->
+                        <div class="song-info" id="song-info-3">
+                            <div class="title">Daylight</div>
+                            <div class="song-details">
+                                <span class="artist">Taylor Swift</span>
+                                <span class="Duration">4:45</span>
+                            </div>
+                            <div class="progress bar">
+                                <div class="progess"></div>
+                            </div>
+                            <div class="time-indicator">
+                                <span class="elapsed"></span>
+                                <span class="remaining"></span>
+                            </div>
+                        </div>
+                        <!--SONG INFO 4: All My Heart-->
+                        <div class="song-info" id="song-info-4">
+                            <div class="title">All My Heart</div>
+                            <div class="song-details">
+                                <span class="Artist">Sleeping With Sirens</span>
+                                <span class="duration">4:00</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progess"></div>
+                            </div>
+                            <div class="time-indicator">
+                                <span class="elapsed"></span>
+                                <span class="remaining"></span>
+                            </div>
+                        </div>
+                        <!--SONG INFO 5: About You-->
+                        <div class="song-info" id="song-info-5">
+                            <div class="title">About You</div>
+                            <div class="song-details">
+                                <span class="artist">The 1975</span>
+                                <span class="duration">5:27</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-indicator">
+                                <span class="elapsed"></span>
+                                <span class="remaining"></span>
+                            </div>
+                        </div>
+
+                        <!--PLAYER CONTROLS-->
+                        <div class="controls">
+                            <button id="prev">◁</button>
+                            <butoon id="pause">▐▐</butoon>
+                            <button id="next">▷</button>
+                        </div>
+                        <!--EXTRA CONTROLS: Favorite button only-->
+                        <div class="extra-controls">
+                            <button id="favorite" class="favorite-btn">♡</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MODAL (Using the provided pop-up content)-->
+            <div class="modal-overlay" id="notificationModal">
+                <div class="modal-content" id="modalContent">
+                    <h2>Someone sent you a playlist</h2>
+                    <p>Hey it's for you. I hope you listen to it.</p>
+                    <button class="modal-close" onclick="closeModal()">Open Playlist</button>
+                </div>
+            </div>
+
+            <!-- Link to external JS-->
+            <script src="Script.js"></script>
+
+        </body>
+    </head>
+
+
+</head>
+
+</html>
